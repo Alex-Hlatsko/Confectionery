@@ -24,5 +24,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

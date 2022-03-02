@@ -5,11 +5,25 @@
     "styles": "./css/style.min.css"
 })
 <body>
-    @@include('./bit_html/header.html',{})
-
-    <main></main>
-    
+    @@include('./bit_html/header.html',{
+        "class": {
+            "display": "nav-content-block",
+            "height": "big_vh"
+        },
+        "path": {
+            "home": "./index.html",
+            "menu": "./menu.html",
+            "contact": "./contact.html"
+        }
+    })
+    <main>
+        
+    </main>
     @@include('./bit_html/footer.html',{})
     <script src="./js/main.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
