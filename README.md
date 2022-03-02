@@ -19,6 +19,6 @@ $ npm run build (for production)
 
 # Technologies:
 
-- ![Gulp](https://gulpjs.com/)
-- ![AOS Library](https://michalsnik.github.io/aos/)
-- ![Slick](https://kenwheeler.github.io/slick/)
+- [Gulp](https://gulpjs.com/)
+- [AOS Library](https://michalsnik.github.io/aos/)
+- [Slick](https://kenwheeler.github.io/slick/)
