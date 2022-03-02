@@ -1,3 +1,278 @@
 body{
     font-family: Roboto Regular;
 }
+
+//Header
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/basic/header.jfif);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bg-black{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+        animation-name: bg-show;
+        animation-duration: 1s;
+    }
+    .header__content{
+        padding: 30px;
+        z-index: 15;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo{
+            img{
+                max-width: 400px;
+            }
+        }
+        .burger{
+            width: 40px;
+            height: 40px;
+            display: none;
+            background-image: url(../images/icons/menu_open.png );
+            background-size: cover;
+            background-position: center;
+        }
+        .nav{
+            padding: 30px 10px;
+            ul{
+                display: flex;
+                li{
+                    margin: 0 20px;
+                    a{
+                        color: $white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        transition: 0.2s;
+                        &:hover{
+                            border-bottom: 3px solid $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .header__title{
+            margin-top: 15px;
+            text-align: center;
+            &.nav-content-none{
+                display: none;
+            }
+            &.nav-content-block{
+                display: block;
+            }
+            h1,p{
+                font-family: Itim;
+                font-size: 96px;
+                font-weight: 600;
+                color: $white;
+                text-shadow: 2px 2px 3px black;
+                animation-duration: 1.2s;
+            }
+            h1{
+                animation-name: head__title-top;
+            }
+            p{
+                animation-name: head__title-bottom;
+            }
+        }
+        .header__btn{
+            padding: 30px 10px;
+            &.nav-content-none{
+                display: none;
+            }
+            &.nav-content-block{
+                display: flex;
+            }
+            a{
+                div{
+                    margin: 5px 15px;
+                    display: flex;
+                    padding: 15px 30px;
+                    background-color: $white;
+                    border-radius: 22px;
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $black;
+                        transition: 0.4s;
+                    }
+                    img{
+                        margin-left: 5px;
+                        transition: 0.4s;
+                    }
+                }
+                &:first-child{
+                    span{
+                        color: $orange;
+                    }
+                    &:hover{
+                        p{
+                            color: $orange;
+                        }
+                        img{
+                            filter: invert(46%) sepia(95%) saturate(1238%) hue-rotate(1deg) brightness(103%) contrast(104%);
+                        }
+                    }
+                }
+                &:last-child{
+                    span{
+                        color: $green;
+                    }
+                    &:hover{
+                        p{
+                            color: $green;
+                        }
+                        img{
+                            filter: invert(56%) sepia(84%) saturate(349%) hue-rotate(87deg) brightness(95%) contrast(91%);
+                        }
+                    }
+                }
+            }
+        }
+        .header__social-icons{
+            margin-top: 15px;
+            &.nav-content-none{
+                display: none;
+            }
+            &.nav-content-block{
+                display: flex;
+            }
+            a{
+                img{
+                    width: 50px;
+                    filter: brightness(0) invert(1);
+                    margin: 5px 5px;
+                }
+            }
+        }
+    }
+}
+
+//Footer
+.footer{
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        .footer__content{
+            .footer__title{
+                display: inline-block;
+                margin-bottom: 15px; 
+                color: $darkblue;
+                font-size: 32px;
+                font-weight: 500;
+                border-bottom: 3px solid $darkblue;
+            }
+            .footer__btn{
+                .footer__text:first-child{
+                    a{
+                        padding: 5px 15px;
+                        border-radius: 18px;
+                        background-color: $green;
+                        transition: 0.5s;
+                        border: 1px solid $green;
+                        &:hover{
+                            background-color: $white;
+                            border: 1px solid $green;
+                            p{
+                                color: $green;
+                            }
+                            img{
+                                filter: invert(56%) sepia(84%) saturate(349%) hue-rotate(87deg) brightness(95%) contrast(91%);
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $white;
+                        }
+                        img{
+                            margin-left: 5px;
+                            margin-right: 0;
+                            width: 15px;
+                            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(100%) contrast(103%);
+                        }
+                    }
+                }
+                .footer__text:last-child{
+                    a{
+                        padding: 5px 15px;
+                        border-radius: 18px;
+                        background-color: $orange;
+                        border: 1px solid $orange;
+                        &:hover{
+                            background-color: $white;
+                            border: 1px solid $orange;
+                            p{
+                                color: $orange;
+                            }
+                            img{
+                                filter: invert(46%) sepia(95%) saturate(1238%) hue-rotate(1deg) brightness(103%) contrast(104%);
+                            }
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $white;
+                        }
+                        img{
+                            margin-left: 5px;
+                            margin-right: 0;
+                            width: 15px;
+                            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(100%) contrast(103%);
+                        }
+                    }
+                }
+            }
+            .footer__text{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                color: $darkblue;
+                p{
+                    span{
+                        font-weight: 600;
+                    }
+                }
+                a{
+                    display: flex;
+                    color: $darkblue;
+                }
+                img{
+                    width: 30px;
+                    margin-right: 10px;
+                    filter: invert(13%) sepia(90%) saturate(869%) hue-rotate(199deg) brightness(91%) contrast(101%);
+                }
+            }
+        } 
+    }
+    .footer__bottom{
+        margin-top: 90px;
+        padding: 15px 10px;
+        width: 100%;
+        background-color: $darkblue;
+        text-align: center;
+        a{
+            color: $white;
+            font-size: 18px;
+        }
+    }
+}
