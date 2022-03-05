@@ -5,4 +5,74 @@
 @import 'animation';
 @import 'adaptive';
 
+.menu{
+    padding: 60px 15px;        
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 200px 400px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box4 box3";
+    &__item{
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+        &__bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            background-color: $black;
+            opacity: 0.5;
+            transition: 0.5s;
 
+        }
+        &__title{
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            z-index: 6;
+            color: $white;
+            font-size: 24px;
+            font-family: Itim;
+            transition: 0.5s;
+        }
+        &:hover{
+            .menu__item__bg{
+                opacity: 0.2;
+            }
+        }
+    }
+    &__item.box1{
+        grid-area: box1;
+        background-image: url(../images/menu/ciastka/ciastka1.jpg);
+        img{
+            max-width: 300px;
+            height: 200px;
+        }
+    }
+    &__item.box2{
+        grid-area: box2;
+        background-image: url(../images/menu/napoje/napoje1.jpg);
+
+        img{
+            max-width: 300px;
+            height: 200px;
+        }
+    }
+    &__item.box3{
+        grid-area: box3;
+        background-image: url(../images/menu/gofry/gofry1.jpg);
+
+    }
+    &__item.box4{
+        grid-area: box4;
+        background-image: url(../images/menu/paczki/paczki1.jpg);
+
+    }
+}

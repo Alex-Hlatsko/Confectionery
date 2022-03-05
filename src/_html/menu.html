@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("./bit_html/head.html", {
-    "title": "Home",
+    "title": "Menu",
     "styles": "./css/style.min.css"
 })
 <body>
     @@include('./bit_html/header.html',{
         "class": {
-            "display": "nav-content-block",
-            "height": "big_vh"
+            "display": "nav-content-none",
+            "height": "min_vh"
         },
         "path": {
             "home": "./index.html",
@@ -17,7 +17,32 @@
         }
     })
     <main>
-        
+        <div class="menu">
+            <div class="menu__item box1">
+                <a href="#">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Ciastka</p>
+                </a>
+            </div>
+            <div class="menu__item box2">
+                <a href="#">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Napoje</p>
+                </a>
+            </div>
+            <div class="menu__item box3">
+                <a href="#">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Gofry</p>
+                </a>
+            </div>
+            <div class="menu__item box4">
+                <a href="#">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Paczki</p>
+                </a>
+            </div>
+        </div>
     </main>
     @@include('./bit_html/footer.html',{})
     <script src="./js/main.min.js"></script>
