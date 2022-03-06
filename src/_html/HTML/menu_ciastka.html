@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("../bit_html/head.html", {
-    "title": "Ciastka",
+    "title": "Menu",
     "styles": "../css/style.min.css"
 })
 <body>
-    @@include('../bit_html/header.html',{})
-
-    <main></main>
-    
-    @@include('../bit_html/footer.html',{})
+    @@include('../bit_html/header.html',{
+        "class": {
+            "display": "nav-content-none",
+            "height": "min_vh"
+        },
+        "path": {
+            "home": "../index.html",
+            "menu": "../menu.html",
+            "contact": "../contact.html",
+            "images": "../images"
+        }
+    })
+    <main>
+        
+    </main>
+    @@include('../bit_html/footer.html',{
+        "path": {
+            "images": "../images"
+        }
+    })
     <script src="./js/main.min.js"></script>
 </body>
 </html>
