@@ -5,6 +5,8 @@
 @import 'animation';
 @import 'adaptive';
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 .menu{
     padding: 60px 15px;        
     width: 85%;
@@ -74,5 +76,29 @@
         grid-area: box4;
         background-image: url(../images/menu/paczki/paczki1.jpg);
 
+    }
+}
+
+.menu__content{
+    padding: 60px 15px 30px 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    &__text{
+        table{
+            tr{
+                th{
+                    padding-bottom: 10px;
+                    text-align: left;
+                }
+                td{
+                    padding: 8px 40px 8px 0;
+                    i{
+                        color: $orange;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -7,6 +7,17 @@ main{
     align-items: center;
 }
 
+.menu__title{
+    font-family: Itim;
+    display: inline-block;
+    color: $darkblue;
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid $blue;
+}
+
 .header{
     position: relative;
     width: 100%;
