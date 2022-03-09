@@ -4,3 +4,12 @@ menuToggle.onclick  =  function(){
     menuToggle.classList.toggle('active')
     navigation.classList.toggle('active')
 }
+$('.sl').slick({
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+});

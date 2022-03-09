@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("../bit_html/head.html", {
-    "title": "Menu",
-    "styles": "../css/style.min.css"
+"title": "Menu",
+"styles": "../css/style.min.css"
 })
+
 <body>
-    @@include('../bit_html/header.html',{
-        "class": {
-            "display": "nav-content-none",
-            "height": "min_vh"
-        },
-        "path": {
-            "home": "../index.html",
-            "menu": "../menu.html",
-            "contact": "../contact.html",
-            "images": "../images"
-        }
-    })
-    <main>
-        <div class="menu__content">
-            <div class="menu__content__text">
-                <h1 class="menu__title">Ciastka</h1>
-                <table>
-                    <tr>
-                      <th></th>
-                      <th>0.30 L</th>
-                      <th>0.40 L</th>
-                    </tr>
-                    <tr>
-                      <td><i class="bi bi-stop-circle-fill"></i>Cynamonowe</td>
-                      <td>9,90 zł</td>
-                      <td>12,50 zł</td>
-                    </tr>
-                    <tr>
-                      <td><i class="bi bi-stop-circle-fill"></i>Czekoladowe</td>
-                      <td>10,90 zł</td>
-                      <td>13,90 zł</td>
-                    </tr>
-                    <tr>
-                        <td><i class="bi bi-stop-circle-fill"></i>Orzechowo-karmelowe</td>
-                        <td>10,90 zł</td>
-                        <td>13,90 zł</td>
-                      </tr>
-                      <tr>
-                        <td><i class="bi bi-stop-circle-fill"></i>Nutela</td>
-                        <td>10,90 zł</td>
-                        <td>13,90 zł</td>
-                      </tr>
-                      <tr>
-                        <td><i class="bi bi-stop-circle-fill"></i>Biała czekolada z kokosem</td>
-                        <td>10,90 zł</td>
-                        <td>13,90 zł</td>
-                      </tr>
-                      <tr>
-                        <td><i class="bi bi-stop-circle-fill"></i>Rurka z bitą śmietaną</td>
-                        <td>5,00 zł	</td>
-                        <td>-</td>
-                      </tr>
-                  </table>
-            </div>
-            <div class="menu__content__slider">
-                <img src="../images/menu/ciastka/ciastka1.jpg" alt="">
-            </div>
-        </div>
-    </main>
-    @@include('../bit_html/footer.html',{
-        "path": {
-            "images": "../images"
-        }
-    })
-    <script src="./js/main.min.js"></script>
+  @@include('../bit_html/header.html',{
+  "class": {
+  "display": "nav-content-none",
+  "height": "min_vh"
+  },
+  "path": {
+  "home": "../index.html",
+  "menu": "../menu.html",
+  "contact": "../contact.html",
+  "images": "../images"
+  }
+  })
+  <main>
+    <div class="menu__content">
+      <div class="menu__content__text">
+        <h1 class="menu__title">Ciastka</h1>
+        <table>
+          <tr>
+            <th></th>
+            <th>0.30 L</th>
+            <th>0.40 L</th>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Cynamonowe</td>
+            <td>9,90 zł</td>
+            <td>12,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Czekoladowe</td>
+            <td>10,90 zł</td>
+            <td>13,90 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Orzechowo-karmelowe</td>
+            <td>10,90 zł</td>
+            <td>13,90 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Nutela</td>
+            <td>10,90 zł</td>
+            <td>13,90 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Biała czekolada z kokosem</td>
+            <td>10,90 zł</td>
+            <td>13,90 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Rurka z bitą śmietaną</td>
+            <td>5,00 zł </td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+      <div class="menu__content__slider sl">
+        <div><img src="../images/menu/ciastka/ciastka1.jpg" alt="ciastka1"></div>
+        <div><img src="../images/menu/ciastka/ciastka2.jpg" alt="ciastka2"></div>
+        <div><img src="../images/menu/ciastka/ciastka3.jpg" alt="ciastka3"></div>
+        <div><img src="../images/menu/ciastka/ciastka4.jpg" alt="ciastka4"></div>
+      </div>
+    </div>
+  </main>
+  @@include('../bit_html/footer.html',{
+  "path": {
+  "images": "../images"
+  }
+  })
+  <link rel="stylesheet" href="../libs/slick/slick.css">
+  <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../libs/slick/slick.min.js"></script>
+  <script src="../js/main.min.js"></script>
 </body>
+
 </html>

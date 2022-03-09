@@ -80,10 +80,11 @@
 }
 
 .menu__content{
-    padding: 60px 15px 30px 15px;
+    padding: 60px 15px 60px 15px;
     width: 90%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     &__text{
         table{
             tr{
@@ -100,5 +101,9 @@
                 }
             }
         }
+    }
+    &__slider{
+        width: 500px;
+        padding-top: 60px;
     }
 }
