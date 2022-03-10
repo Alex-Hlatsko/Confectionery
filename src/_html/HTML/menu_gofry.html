@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("../bit_html/head.html", {
-    "title": "Menu",
-    "styles": "../css/style.min.css"
+"title": "Gofry",
+"styles": "../css/style.min.css"
 })
+
 <body>
-    @@include('../bit_html/header.html',{
-        "class": {
-            "display": "nav-content-none",
-            "height": "min_vh"
-        },
-        "path": {
-            "home": "../index.html",
-            "menu": "../menu.html",
-            "contact": "../contact.html",
-            "images": "../images"
-        }
-    })
-    <main>
-        
-    </main>
-    @@include('../bit_html/footer.html',{
-        "path": {
-            "images": "../images"
-        }
-    })
-    <script src="./js/main.min.js"></script>
+  @@include('../bit_html/header.html',{
+  "class": {
+  "display": "nav-content-none",
+  "height": "min_vh"
+  },
+  "path": {
+  "home": "../index.html",
+  "menu": "../menu.html",
+  "contact": "../contact.html",
+  "images": "../images"
+  }
+  })
+  <main>
+    <div class="menu__content">
+      <div class="menu__content__text">
+        <h1 class="menu__title">Gofry</h1>
+        <table>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Suchy</td>
+            <td>6,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z cukrem pudrem lub cynamonem</td>
+            <td>7,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z polewą</td>
+            <td>7,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z karmelem i orzechami pekan</td>
+            <td>11,00 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z syropem klonowym</td>
+            <td>10,00 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z syropem klonowym i migdałami</td>
+            <td>11,00 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z zbitą śmietaną</td>
+            <td>11,00 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z owocami w żelu</td>
+            <td>10,50 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Ze świeżymi owocami</td>
+            <td>12,50 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z nutelą lub białą czekoladą</td>
+            <td>12,00 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i> Z bitą śmietaną i świeżymi owocami</td>
+            <td>14,00 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i> Z nutelą i świeżymi owocami</td>
+            <td>14,00 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z białą czekoladą i kokosem</td>
+            <td>12,50 zł </td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i>Z bitą śmietaną, świeżymi owocami
+                i nutelą lub białą czekoladą</td>
+            <td>15,00 zł </td>
+          </tr>
+        </table>
+      </div>
+      <div class="menu__content__slider sl">
+        <div><img src="../images/menu/gofry/gofry1.jpg" alt="gofry1"></div>
+        <div><img src="../images/menu/gofry/gofry2.jpg" alt="gofry2"></div>
+        <div><img src="../images/menu/gofry/gofry3.jpg" alt="gofry3"></div>
+      </div>
+    </div>
+  </main>
+  @@include('../bit_html/footer.html',{
+  "path": {
+  "images": "../images"
+  }
+  })
+  <link rel="stylesheet" href="../libs/slick/slick.css">
+  <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../libs/slick/slick.min.js"></script>
+  <script src="../js/main.min.js"></script>
 </body>
+
 </html>

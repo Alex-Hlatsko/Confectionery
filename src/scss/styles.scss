@@ -80,11 +80,11 @@
 }
 
 .menu__content{
-    padding: 60px 15px 60px 15px;
+    padding: 60px 60px 60px 60px;
     width: 90%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     &__text{
         table{
             tr{
