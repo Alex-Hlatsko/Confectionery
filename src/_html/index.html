@@ -13,17 +13,18 @@
         "path": {
             "home": "./index.html",
             "menu": "./menu.html",
-            "contact": "./contact.html"
+            "contact": "./contact.html",
+            "images": "./images"
         }
     })
     <main>
         
     </main>
-    @@include('./bit_html/footer.html',{})
+    @@include('./bit_html/footer.html',{
+        "path": {
+            "images": "./images"
+        }
+    })
     <script src="./js/main.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>

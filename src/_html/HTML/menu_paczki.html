@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("../bit_html/head.html", {
-    "title": "Paczki",
-    "styles": "../css/style.min.css"
+"title": "Paczki",
+"styles": "../css/style.min.css"
 })
-<body>
-    @@include('../bit_html/header.html',{})
 
-    <main></main>
-    
-    @@include('../bit_html/footer.html',{})
-    <script src="./js/main.min.js"></script>
+<body>
+  @@include('../bit_html/header.html',{
+  "class": {
+  "display": "nav-content-none",
+  "height": "min_vh"
+  },
+  "path": {
+  "home": "../index.html",
+  "menu": "../menu.html",
+  "contact": "../contact.html",
+  "images": "../images"
+  }
+  })
+  <main>
+    <div class="menu__content" data-aos="fade-up">
+      <div class="menu__content__text">
+        <h1 class="menu__title">Packki</h1>
+        <table>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>6x</b> cynamonowe małe</td>
+            <td>47,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>4x</b> cynamonowe duże</td>
+            <td>41,00 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>6x</b> czekoladowe małe</td>
+            <td>52,00 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>4x</b> czekoladowe duże</td>
+            <td>44,50 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>6x</b> mix małe</td>
+            <td>51,00 zł</td>
+          </tr>
+          <tr>
+            <td><i class="bi bi-stop-circle-fill"></i><b>4x</b> mix duże</td>
+            <td>43,50 zł </td>
+          </tr>
+        </table>
+      </div>
+      <div class="menu__content__slider sl">
+        <div><img src="../images/menu/paczki/paczki1.jpg" alt="paczki1"></div>
+        <div><img src="../images/menu/paczki/paczki2.jpg" alt="paczki2"></div>
+        <div><img src="../images/menu/paczki/paczki3.jpg" alt="paczki3"></div>
+        <div><img src="../images/menu/paczki/paczki4.jpg" alt="paczki4"></div>
+      </div>
+    </div>
+  </main>
+  @@include('../bit_html/footer.html',{
+  "path": {
+  "images": "../images"
+  }
+  })
+  <link rel="stylesheet" href="../libs/slick/slick.css">
+  <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../libs/slick/slick.min.js"></script>
+  <script src="../js/main.min.js"></script>
 </body>
+
 </html>

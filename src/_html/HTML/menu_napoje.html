@@ -1,15 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include("../bit_html/head.html", {
-    "title": "Napoje",
-    "styles": "../css/style.min.css"
+"title": "Napoje",
+"styles": "../css/style.min.css"
 })
-<body>
-    @@include('../bit_html/header.html',{})
 
-    <main></main>
-    
-    @@include('../bit_html/footer.html',{})
-    <script src="./js/main.min.js"></script>
+<body>
+    @@include('../bit_html/header.html',{
+    "class": {
+    "display": "nav-content-none",
+    "height": "min_vh"
+    },
+    "path": {
+    "home": "../index.html",
+    "menu": "../menu.html",
+    "contact": "../contact.html",
+    "images": "../images"
+    }
+    })
+    <main>
+        <div class="menu__content" data-aos="fade-up">
+            <div class="menu__content__text">
+                <h1 class="menu__title">Smoothie</h1>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>0.30 L</th>
+                        <th>0.40 L</th>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Sok pomarańczowy, banan, truskawka</td>
+                        <td>15,00 zł</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Sok pomarańczowy, sok grejpfrutowy, banan</td>
+                        <td>15,00 zł</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Sok pomarańczowy, banan, mango</td>
+                        <td>15,00 zł</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Sok pomarańczowy, szpinak, seler, jarmuż, imbir, kiwi
+                        </td>
+                        <td>15,00 zł</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Sok jabłkowy, banan, truskawka</td>
+                        <td>15,00 zł</td>
+                        <td>18,00 zł</td>
+                    </tr>
+                    <tr>
+                        <td><i class="bi bi-stop-circle-fill"></i>Kompozycja własna</td>
+                        <td>15,00 zł </td>
+                        <td>18,00 zł</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="menu__content__slider sl">
+                <div><img src="../images/menu/napoje/napoje1.jpg" alt="napoje1"></div>
+                <div><img src="../images/menu/napoje/napoje2.jpeg" alt="napoje2"></div>
+                <div><img src="../images/menu/napoje/napoje3.jpeg" alt="napoje3"></div>
+                <div><img src="../images/menu/napoje/napoje4.jpeg" alt="napoje4"></div>
+            </div>
+        </div>
+        <div class="menu__content" data-aos="fade-up">
+            <div class="menu__content__text">
+                <h1 class="menu__title">Świeże soki</h1>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>0.20 L</th>
+                    <th>0.30 L</th>
+                    <th>0.40 L</th>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Pomarańcza</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Grejpfrut</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Jabłko</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Marchewka</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Burak</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="menu__content__text">
+                <h1 class="menu__title">Koktajle mleczne</h1>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>0.30 L</th>
+                    <th>0.40 L</th>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Banan</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Truskawka</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Jagoda</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Malina</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Mango</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                </table>
+              </div>
+        </div>
+        <div class="menu__content">
+            <div class="menu__content__text">
+                <h1 class="menu__title">Napoje gorące</h1>
+                <table>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Espresso</td>
+                    <td>8,90 zł	</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Espresso doppio</td>
+                    <td>10,90 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Espresso macchiato</td>
+                    <td>11,90 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Americano</td>
+                    <td>9,90 zł</td>
+                    <td>12,90 zł</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i> Americano z mlekiem</td>
+                    <td>10,90 zł</td>
+                    <td>13,90 zł</td>
+                    <td>14,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Cappuccino</td>
+                    <td>11,90 zł</td>
+                    <td>14,90 zł</td>
+                    <td>15,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Cappuccino con panna</td>
+                    <td>11,90 zł</td>
+                    <td>15,90 zł</td>
+                    <td>16,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Flat white</td>
+                    <td>12,90 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Latte macchiato</td>
+                    <td>---</td>
+                    <td>13,90 zł</td>
+                    <td>14,90 zł</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="menu__content__text">
+                <h1 class="menu__title">Napoje zimne</h1>
+                <table>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Kawa mrożona smakowa</td>
+                    <td>---</td>
+                    <td>13,90 zł</td>
+                    <td>15,90 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Lemoniada</td>
+                    <td>---</td>
+                    <td>12,00 zł</td>
+                    <td>14,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Lemoniada smakowa</td>
+                    <td>---</td>
+                    <td>13,00 zł</td>
+                    <td>15,00 zł</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Woda</td>
+                    <td>4,50 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Pepsi</td>
+                    <td>5,00 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Pepsi max</td>
+                    <td>5,00 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Mirinda</td>
+                    <td>5,00 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>7up</td>
+                    <td>5,00 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                  <tr>
+                    <td><i class="bi bi-stop-circle-fill"></i>Lipton</td>
+                    <td>5,00 zł</td>
+                    <td>---</td>
+                    <td>---</td>
+                  </tr>
+                </table>
+              </div>
+        </div>
+    </main>
+    @@include('../bit_html/footer.html',{
+    "path": {
+    "images": "../images"
+    }
+    })
+    <link rel="stylesheet" href="../libs/slick/slick.css">
+    <link rel="stylesheet" href="../libs/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../libs/slick/slick.min.js"></script>
+    <script src="../js/main.min.js"></script>
 </body>
+
 </html>
