@@ -6,7 +6,7 @@ Website for confectionery in Krakow, Poland
 ![Header](https://github.com/Alex-Hlatsko/Cynamon_Website/blob/master/for_readme/banner.jpg)
 
 # Table of content:
-* [Commands for start](#for start)
+* [Commands for start](#for-start)
 * [Technologies](#technologies)
 
 
