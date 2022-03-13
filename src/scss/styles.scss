@@ -110,9 +110,31 @@
 main{
     .contact__form{
         padding: 90px 15px 90px 15px;
+        text-align: center;
+        .title{
+            font-family: Itim;
+            color: $black;
+            font-weight: 400;
+            font-size: 48px;
+        }
         input{
             margin-top: 30px;
+            padding: 15px 5px;
             width: 90%;
+            border: 2px solid $blue;
+            color: $black;
+        }
+        .submit{
+            margin-top: 30px;
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: 25px;
+            background-color: $blue;
+            color: $white;
+            font-size: 24px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
         }
     }
     .map{
