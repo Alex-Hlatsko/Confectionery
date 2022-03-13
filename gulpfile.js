@@ -35,7 +35,7 @@ const mainTasks = gulp.parallel(html, styles, scripts, images, fonts);
 
 //Modes
 const dev = gulp.series(reset, lib, mainTasks, gulp.parallel(server, watcher));
-const build = gulp.series(reset, mainTasks);
+const build = gulp.series(reset, lib, mainTasks);
 
 //Export mods
 export { dev }
