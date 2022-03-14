@@ -1,4 +1,4 @@
-# Cynamon_Website
+# Confectionery
 Website for confectionery in Krakow, Poland
 
 

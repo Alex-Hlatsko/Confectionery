@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header min_vh">
+    <div class="bg-black"></div>
+    <div class="header__content">
+        <div class="logo">
+            <a href="#"><img src="./images/basic/logo.png" alt="logo"></a>
+        </div>
+        <div class="burger" id="menuToggle"></div>
+        <div class="nav" id="navigation">
+            <ul class="nav__menu">
+                <li><a href="./index.html" class="menu__item">Cynamon</a></li>
+                <li><a href="./menu.html" class="menu__item">Menu</a></li>
+                <li><a href="./contact.html" class="menu__item">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header__title nav-content-none">
+            <h1>Ciastkarnia</h1>
+            <p>z miłością</p>
+        </div>
+        <div class="header__btn nav-content-none" data-aos="fade-up">
+            <a href="#">
+                <div>
+                    <p>Zamow z <span>UberEats</span></p>
+                    <img src="./images/icons/basket.svg" alt="basket">
+                </div>
+            </a>
+            <a href="#">
+                <div>
+                    <p>Zamow z <span>Pyszne.pl</span></p>
+                    <img src="./images/icons/basket.svg" alt="basket">
+                </div>
+            </a>
+        </div>
+        <div class="header__social-icons nav-content-none">
+            <a href="https://www.facebook.com/krakow.cynamon/"><img src="./images/icons/facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/cynamon.krakow/"><img src="./images/icons/instagram.svg" alt="instagram"></a>
+        </div>
+    </div>
+</header>
+    <main>
+        <div class="menu">
+            <div class="menu__item box1">
+                <a href="./HTML/menu_ciastka.html">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Ciastka</p>
+                </a>
+            </div>
+            <div class="menu__item box2">
+                <a href="./HTML/menu_napoje.html">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Napoje</p>
+                </a>
+            </div>
+            <div class="menu__item box3">
+                <a href="./HTML/menu_gofry.html">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Gofry</p>
+                </a>
+            </div>
+            <div class="menu__item box4">
+                <a href="./HTML/menu_paczki.html">
+                    <div class="menu__item__bg"></div>
+                    <p class="menu__item__title">Paczki</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="footer__container" data-aos="fade-up">
+        <div class="footer__content">
+            <h1 class="footer__title">Zapraszamy:</h1>
+            <div class="footer__text">
+                <img src="./images/icons/place.svg" alt="place">
+                <p>Galeria Krakowska, <span>piętro -1</span></p>
+            </div>
+            <div class="footer__text">
+                <img src="./images/icons/time.svg" alt="time">
+                <p>poniedziałek - niedziela:<br><span>9:00 - 22:00</span></p>
+            </div>
+        </div>
+        <div class="footer__content">
+            <h1 class="footer__title">Kontakt:</h1>
+            <div class="footer__text">
+                <img src="./images/icons/call.svg" alt="phone">
+                <p>12 628 78 81</p>
+            </div>
+            <div class="footer__text">
+                <img src="./images/icons/mess.svg" alt="time">
+                <p>cynamon.krakow@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer__content">
+            <h1 class="footer__title">Śledź nas:</h1>
+            <div class="footer__text">
+                <img src="./images/icons/facebook.svg" alt="facebook">
+                <a href="https://www.facebook.com/krakow.cynamon/">/krakow.cynamon</a>
+            </div>
+            <div class="footer__text">
+                <img src="./images/icons/instagram.svg" alt="instagram">
+                <a href="https://www.instagram.com/cynamon.krakow/">/cynamon.krakow</a>
+            </div>
+        </div>
+        <div class="footer__content">
+            <h1 class="footer__title">Zamów teraz:</h1>
+            <div class="footer__btn">
+                <div class="footer__text">
+                    <a href="https://www.ubereats.com/pl/store/cynamon/jwaLPnUwQi6pkOyuyc34oQ">
+                        <p>UberEats</p>
+                        <img src="./images/icons/basket.svg" alt="basket">
+        
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.pyszne.pl/menu/cynamon-pawia">
+                        <p>Pydzne.pl</p>
+                        <img src="./images/icons/basket.svg" alt="basket">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <a href="#">© 2021 Ciastkarnia Cynamon</a>
+    </div>
+</footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
