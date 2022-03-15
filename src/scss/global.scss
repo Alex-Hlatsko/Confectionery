@@ -160,19 +160,6 @@ main{
                 }
                 &:first-child{
                     span{
-                        color: $orange;
-                    }
-                    &:hover{
-                        p{
-                            color: $orange;
-                        }
-                        img{
-                            filter: invert(46%) sepia(95%) saturate(1238%) hue-rotate(1deg) brightness(103%) contrast(104%);
-                        }
-                    }
-                }
-                &:last-child{
-                    span{
                         color: $green;
                     }
                     &:hover{
@@ -180,7 +167,20 @@ main{
                             color: $green;
                         }
                         img{
-                            filter: invert(56%) sepia(84%) saturate(349%) hue-rotate(87deg) brightness(95%) contrast(91%);
+                            filter: invert(60%) sepia(82%) saturate(376%) hue-rotate(87deg) brightness(90%) contrast(84%);
+                        }
+                    }
+                }
+                &:last-child{
+                    span{
+                        color: $orange;
+                    }
+                    &:hover{
+                        p{
+                            color: $orange;
+                        }
+                        img{
+                            filter: invert(70%) sepia(90%) saturate(4585%) hue-rotate(2deg) brightness(104%) contrast(104%);
                         }
                     }
                 }
