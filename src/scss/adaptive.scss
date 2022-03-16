@@ -110,3 +110,24 @@
         }
     }
 }
+@media only screen and (max-width: 364px) {
+    header.header{
+        .header__content{
+            .header__title{
+                h1,p{
+                    font-size: 48px;
+                }
+            }
+            .header__btn{
+                a{
+                    div{
+                        padding: 10px 15px;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

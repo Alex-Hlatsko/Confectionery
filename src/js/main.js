@@ -4,6 +4,9 @@ menuToggle.onclick  =  function(){
     menuToggle.classList.toggle('active')
     navigation.classList.toggle('active')
 }
+
+AOS.init();
+
 $('.sl').slick({
     autoplay: true,
     arrows: false,
