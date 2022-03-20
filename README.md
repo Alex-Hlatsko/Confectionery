@@ -14,7 +14,8 @@ Website for confectionery in Krakow, Poland
 
 ```
 $ git clone
-$ cd Cynamon_Website
+$ cd Confectionery
+
 $ npm i
 $ npm run dev (for development)
 $ npm run build (for production)
